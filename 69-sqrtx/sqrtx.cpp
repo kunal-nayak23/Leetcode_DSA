@@ -6,9 +6,9 @@ public:
         int ans;
 
         while(low<=high){
-            int mid=low+(high-low)/2;
-
-            if((long long)mid*mid<=x){
+            long long mid = low+(high-low)/2;
+            long long val = mid*mid;
+            if(val<=x){
                 ans=mid;
                 low=mid+1;
             }
